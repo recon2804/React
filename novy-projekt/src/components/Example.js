@@ -1,24 +1,21 @@
 import "./Example.css"
+import {useState} from "react"
 
 const Example = () => {
-    let title = "Můj první titulek"
-
-    const vychoziPole = [`David`, `Hermiona`, `Harry`]
-    const student1 = vychoziPole[0]
-    const student2 = vychoziPole[1]
-    const student3 = vychoziPole[2]
-    console.log(student1, student2, student3) 
-
-    /*const [student1, student2, student3] = vychoziPole
-    console.log(student1, student2, student3)*/
+    const [title, setTitle] = useState("Můj první titulek")
 
     const buttonHandler = () => {
-        title = "Nový title"
+        setTitle("Nový titulek")
+    }
+
+    const buttonHandlerNd = () => {
+        setTitle("Znovu změněný titulek")
     }
 
     return <div>
             <h2>{title}</h2>
             <button type="button" onClick={buttonHandler}>Změnit titulek</button>
+            <button type="button" onClick={buttonHandlerNd}>Znovu změnit titulek</button>
             </div>
 }
 
