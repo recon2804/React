@@ -2,7 +2,9 @@
 import Example from "./components/Example"
 
 const App = () => {
-  return <Example/>
+  return <div className="changer">
+    <Example/>
+    </div>
 }
 
 

@@ -21,7 +21,7 @@ const Example = () => {
         setTextButton("Text tlačítka byl změněn")
     }
 
-    return <div>
+    return <div className="text-button-changer">
             <h2>{title}</h2>
             <button type="button" onClick={buttonHandler}>Změnit titulek</button>
             <button type="button" onClick={buttonHandlerNd}>Znovu změnit titulek</button>
