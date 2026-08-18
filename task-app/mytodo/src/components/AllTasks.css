@@ -1,0 +1,45 @@
+.one-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 25px;
+    margin: 10px auto;
+}
+
+.one-task h4 {
+    padding: 10px 15px;
+    font-weight: 700;
+}
+
+.one-task button {
+    background-color: green;
+    color: rgb(17, 255, 17);
+    padding: 10px 15px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.one-task button:hover {
+    transition: 0.9s ease;
+    background-color: rgb(2, 83, 2);
+}
+
+.main-button {
+    background-color: green;
+    color: rgb(17, 255, 17);
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 20px auto
+}
+
+.main-button:hover {
+    transition: 0.9s ease;
+    background-color: rgb(2, 83, 2);
+}
